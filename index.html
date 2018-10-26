@@ -1,0 +1,20 @@
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+<a-scene embedded arjs='sourceType: webcam;'>
+
+    <a-marker preset='hiro'>
+        <a-gltf-model src="hiro/scene.gltf" position="0 0.5 0" rotation="0 0 0" scale="0.001 0.001 0.001" animation-mixer="clip: Take 001; loop:once"> </a-gltf-model>
+        <a-text side='double' value="Obelisk the tormentor" position='-1 0 0' color='silver'></a-text>
+        <a-text side='double' value="4000/4000" position='-1 -0.3 0' color='blue'></a-text>
+    </a-marker>
+
+    <a-marker preset='kanji'>
+        <a-gltf-model src="kanji/scene.gltf" position="0 1 0" rotation="90 0 0" scale="0.0001 0.0001 0.0001" animation-mixer="clip: Take 001; loop:once"> </a-gltf-model>
+        <a-text side='double' value="Dark magicien girl" position='-1 0 0' color='silver'></a-text>
+        <a-text side='double' value="2000/1700" position='-1 -0.3 0' color='blue'></a-text>
+    </a-marker>
+
+</a-scene>
+</body>
